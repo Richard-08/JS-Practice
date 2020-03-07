@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Binary-to-Decimal number converter</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <h1>Bin2Dec</h1>
+            <h4>Binary to Decimal Converter</h4>
+
+            <form>
+                <div class="wrapper__binary">
+                    <label for="binary">Binary</label>
+                    <p class="warning"></p>
+                    <input type="text" name="binary" placeholder="Entry a binary number" class="binary">
+                </div>
+                
+                <div class="wrapper__decimal">
+                    <label for="decimal">Decimal</label>
+                    <input type="text" name="decimal" readonly class="decimal">
+                </div>
+                <button class="convert-btn">Convert</button>
+                <button class="reset-btn">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
