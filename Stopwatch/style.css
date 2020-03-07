@@ -1,0 +1,12 @@
+body {
+    padding: 30px;
+}
+
+.container {
+    background-color: rgb(168, 168, 168);
+    border-radius: 5px;
+}
+
+.timer {
+    font-size: 100px;
+}
