@@ -5,3 +5,4 @@
 3) Binary to Decimal Converter - https://richard-08.github.io/JS-Practice/Bin2Dec/
 4) Border-radius Previewer - https://richard-08.github.io/JS-Practice/Border-radius%20Previewer/
 5) Calculator - https://richard-08.github.io/JS-Practice/Calculator/
+6) Color Cycle - https://richard-08.github.io/JS-Practice/ColorCycle/
