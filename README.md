@@ -6,3 +6,4 @@
 4) Border-radius Previewer - https://richard-08.github.io/JS-Practice/Border-radius%20Previewer/
 5) Calculator - https://richard-08.github.io/JS-Practice/Calculator/
 6) Color Cycle - https://richard-08.github.io/JS-Practice/ColorCycle/
+7) Countdown Timer - https://richard-08.github.io/JS-Practice/Countdown%20timer/

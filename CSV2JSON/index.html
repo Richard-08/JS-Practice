@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSV2JSON</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>CSV to JSON Converter</h1>
+
+        <div class="container">
+            <div class="container__csv">
+                <label for="csv">Paste Your CSV Here:</label>
+                <textarea name="csv" placeholder="Please, enter your CSV here" class="csv"></textarea>
+            </div>
+
+            <div class="buttons">
+                
+                <button class="convert">Convert to JSON <i class="fas fa-arrow-circle-right"></i></button>
+                <button class="copy">Copy <i class="fas fa-copy"></i></button>
+                <button class="clear">Clear All <i class="fas fa-trash-alt"></i></button>
+
+            </div>
+
+            <div class="container__json">
+                <label for="json">JSON:</label>
+                <textarea name="json" class="json"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
