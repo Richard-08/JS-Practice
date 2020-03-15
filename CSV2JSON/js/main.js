@@ -4,10 +4,15 @@ const convertBtn = document.querySelector('.convert');
 const clearBtn = document.querySelector('.clear');
 const copyBtn = document.querySelector('.copy');
 
+
+// CSV to Array
+
 function CSVtoArray(csv) {
     let csvArr = csv.split(/\n/).map(value => value.replace(/\"/g, ""));
     return csvArr.map(value => value.split(','));
 }
+
+// Convert CSV Array to JSON
 
 function convertToJSON() {
     let csvValue = csvData.value;
@@ -22,24 +27,32 @@ function convertToJSON() {
         }
     }
     let json = JSON.stringify(dataArray);
-    return json.replace(/},/g, ',\n');
+    return json.replace(/},/g, '},\n');
 }
+
+// Convert button
 
 function convert() {
     let json = convertToJSON();
     jsonData.value = json;
 }
 
+// Reset button
+
 function clearAll() {
     csvData.value = '';
     jsonData.value = '';
 }
+
+// Copy button
 
 function copyJSON() {
     const textArea = jsonData;
     textArea.select();
     document.execCommand('copy');
 }
+
+// Listeners
 
 convertBtn.addEventListener('click', convert);
 clearBtn.addEventListener('click', clearAll);
