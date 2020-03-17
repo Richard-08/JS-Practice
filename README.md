@@ -9,3 +9,5 @@
 7) Countdown Timer - https://richard-08.github.io/JS-Practice/Countdown%20timer/
 8) CSV to JSON Converter - https://richard-08.github.io/JS-Practice/CSV2JSON/
 9) JSON to CSV Converter - https://richard-08.github.io/JS-Practice/JSON2CSV/
+10) GitHub Status - https://richard-08.github.io/JS-Practice/GitHub%20Status/
+11) Form Validation - https://richard-08.github.io/JS-Practice/Form%20Validation/
