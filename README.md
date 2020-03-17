@@ -8,3 +8,4 @@
 6) Color Cycle - https://richard-08.github.io/JS-Practice/ColorCycle/
 7) Countdown Timer - https://richard-08.github.io/JS-Practice/Countdown%20timer/
 8) CSV to JSON Converter - https://richard-08.github.io/JS-Practice/CSV2JSON/
+9) JSON to CSV Converter - https://richard-08.github.io/JS-Practice/JSON2CSV/
