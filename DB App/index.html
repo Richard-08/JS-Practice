@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DB App</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="container">
+            <form class="inputs-container">
+                <div class="id-container">
+                    <label for="userid">UserId:</label>
+                    <input type="text" name="userid" class="userId">
+                </div>
+
+                <div class="name-container">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" class="userName">
+                </div>
+
+                <div class="email-container">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="email">
+                </div>
+            </form>
+
+            <div class="btn-container">
+                <button class="btnCreateDB">Create DB</button>
+                <button class="btnInsert">Insert</button>
+                <button class="btnRemoveAll">Remove All</button>
+            </div>
+
+            <table class="data-table">
+
+                <tr class="data-table__head">
+                    <th>UserID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+
+                <tbody class="data-table__body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
