@@ -54,7 +54,7 @@ window.onload = function () {
 
         tx.onerror = e => console.log(` Error! ${e.target.error}  `);
         const customers = tx.objectStore("customers");
-        customers.add(customerData[0], userId);
+        customers.add(customerData[0], 1);
 
         // Clear inputs
         document.querySelector('.userId').value = '';
