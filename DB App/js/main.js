@@ -5,36 +5,6 @@ const dataTable = document.querySelector('.data-table__body');
 
 let db;
 
-/* function createDB() {
-
-    const dbName = 'Customers';
-    const dbVersion = 1;
-
-    const request = indexedDB.open(dbName, dbVersion);
-
-    //on upgrade needed
-    request.onupgradeneeded = e => {
-        const db = e.target.result
-
-        const customers = db.createObjectStore("customers", { keyPath: 'userid' });
-
-        console.log(`upgrade is called database name: ${db.name} version : ${db.version}`)
-    }
-    //on success 
-    request.onsuccess = e => {
-        db = e.target.result
-        console.log(`success is called database name: ${db.name} version : ${db.version}`)
-    }
-    //on error
-    request.onerror = e => {
-        console.log(`error: ${e.target.error} was found `)
-
-    }
-
-}
-
-createDB(); */
-
 window.onload = function () {
 
     const DBrequest = window.indexedDB.open('Customers', 1);
@@ -67,7 +37,7 @@ window.onload = function () {
 
 
     function insertData() {
-
+        // Grab input values
         const userId = document.querySelector('.userId').value;
         const userName = document.querySelector('.userName').value;
         const email = document.querySelector('.email').value;
@@ -85,6 +55,11 @@ window.onload = function () {
         tx.onerror = e => console.log(` Error! ${e.target.error}  `);
         const customers = tx.objectStore("customers");
         customers.add(customerData[0]);
+
+        // Clear inputs
+        document.querySelector('.userId').value = '';
+        document.querySelector('.userName').value = '';
+        document.querySelector('.email').value = ''
     }
 
 
@@ -103,17 +78,32 @@ window.onload = function () {
                 const dataTableRow = document.createElement('tr');
                 dataTableRow.classList.add('data-table__row');
 
+                // Data cells
                 const tableCell1 = document.createElement('td');
                 const tableCell2 = document.createElement('td');
                 const tableCell3 = document.createElement('td');
 
+                // Delete button
+                const tableCell4 = document.createElement('td');
+                const deleteBtn = document.createElement('button');
+                deleteBtn.classList.add('deleteBtn');
+                deleteBtn.setAttribute('data-remove', cursor.value.userid);
+                deleteBtn.onclick = function (event) {
+                    deleteItem(event);
+                }
+
+                tableCell4.appendChild(deleteBtn);
+
+                //
                 tableCell1.innerText = `${cursor.value.userid}`;
                 tableCell2.innerText = `${cursor.value.name}`;
                 tableCell3.innerText = `${cursor.value.email}`;
-
+                deleteBtn.innerHTML = `<i class='fas fa-times'></i>`;
+                //
                 dataTableRow.appendChild(tableCell1);
                 dataTableRow.appendChild(tableCell2);
                 dataTableRow.appendChild(tableCell3);
+                dataTableRow.appendChild(tableCell4);
 
                 dataTable.appendChild(dataTableRow);
                 //do something with the cursor
@@ -123,10 +113,50 @@ window.onload = function () {
 
     }
 
+    function deleteItem(event) {
+        // retrieve the name of the task we want to delete
+        let key = event.target.parentNode.dataset.remove;
+        console.log(key);
+
+        // open a database transaction and delete the item
+        let transaction = db.transaction(['customers'], 'readwrite');
+        let request = transaction.objectStore('customers').delete(key);
+
+        transaction.oncomplete = function () {
+            event.target.parentNode.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode.parentNode);
+        }
+    }
+
+    function removeAll() {
+        const request = window.indexedDB.open('Customers', 1);
+
+        request.onsuccess = (event) => {
+            console.log('Deleting all customers...');
+            const db = event.target.result;
+            const txn = db.transaction('customers', 'readwrite');
+            txn.onerror = (event) => {
+                console.log('removeAllRows - Txn error: ', event.target.error.code,
+                    " - ", event.target.error.message);
+            };
+
+            txn.oncomplete = (event) => {
+                console.log('All rows removed!');
+            };
+            const objectStore = txn.objectStore('customers');
+            const getAllKeysRequest = objectStore.getAllKeys();
+
+            getAllKeysRequest.onsuccess = (event) => {
+                getAllKeysRequest.result.forEach(key => {
+                    objectStore.delete(key);
+                });
+            }
+
+            displayData();
+        }
+    }
+
     // Listeners
 
-    /* btnCreateDB.addEventListener('click', displayData); */
     btnInsert.addEventListener('click', insertData);
-    /* btnRemoveAll.addEventListener('click', removeAll); */
-
+    btnRemoveAll.addEventListener('click', removeAll);
 }   

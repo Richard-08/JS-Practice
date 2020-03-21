@@ -11,3 +11,4 @@
 9) JSON to CSV Converter - https://richard-08.github.io/JS-Practice/JSON2CSV/
 10) GitHub Status - https://richard-08.github.io/JS-Practice/GitHub%20Status/
 11) Form Validation - https://richard-08.github.io/JS-Practice/Form%20Validation/
+12) DB App - https://richard-08.github.io/JS-Practice/DB%20App/
