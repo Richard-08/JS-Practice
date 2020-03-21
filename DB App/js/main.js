@@ -28,7 +28,7 @@ window.onload = function () {
             console.log('Error loading database');
         }
 
-        let objectStore = db.createObjectStore('customers', { keyPath: 'userId' });
+        let objectStore = db.createObjectStore('customers', { keyPath: 'userId', autoIncrement: true });
 
         objectStore.createIndex('name', 'name', { unique: false });
         objectStore.createIndex('email', 'email', { unique: true });
@@ -54,7 +54,7 @@ window.onload = function () {
 
         tx.onerror = e => console.log(` Error! ${e.target.error}  `);
         const customers = tx.objectStore("customers");
-        customers.add(customerData[0], {keyPath: userId});
+        customers.add(customerData[0]);
 
         // Clear inputs
         document.querySelector('.userId').value = '';
