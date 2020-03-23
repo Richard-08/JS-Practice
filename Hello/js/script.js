@@ -75,7 +75,7 @@ getGreeting().then(data => Object.assign(json, data));
 function userGreeting() {
     if (username.value !== '' && password.value !== '') {
         greeting.classList.add('active');
-        greeting.innerHTML = `${json.hello || Hello}, ${username.value} you have successfully logged in!`;
+        greeting.innerHTML = `${json.hello || 'Hello'}, ${username.value} you have successfully logged in!`;
     }
 
     setTimeout(() => {
