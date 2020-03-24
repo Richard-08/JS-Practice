@@ -13,3 +13,5 @@
 11) Form Validation - https://richard-08.github.io/JS-Practice/Form%20Validation/
 12) DB App - https://richard-08.github.io/JS-Practice/DB%20App/
 13) Hello App - https://richard-08.github.io/JS-Practice/Hello/
+14) IOT Mailbox Simulator - https://richard-08.github.io/JS-Practice/IOT%20Mailbox%20Simulator/
+15) Particle Effects - https://richard-08.github.io/JS-Practice/Particle%20Effects/
