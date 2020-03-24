@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  padding: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.control {
+  padding: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 5px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: #f1f1f1;
+}
+
+.start-btn {
+  background-color: mediumspringgreen;
+}
+
+.start-btn:hover {
+  box-shadow: 0px 0px 0px 3px rgba(0, 250, 154, 0.3);
+}
+
+.stop-btn {
+  background-color: tomato;
+}
+
+.stop-btn:hover {
+  box-shadow: 0px 0px 0px 3px rgba(255, 99, 71, 0.3);
+}
+
+.reset-btn {
+  background-color: darkgray;
+}
+
+.reset-btn:hover {
+  box-shadow: 0px 0px 0px 3px rgba(169, 169, 169, 0.3);
+}
+
+.mailbox {
+  padding: 10px;
+}
+
+.mailbox h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.status {
+  font-weight: 200;
+  background-color: blanchedalmond;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.status.open {
+  background-color: lightgreen;
+}
+
+.mailbox__status {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.mailbox__notification {
+  padding: 5px;
+  color: hsl(229, 6%, 66%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mailbox__notification i {
+  color: black;
+}
+
+.mailbox__notification.start {
+  background-color: rgba(0, 250, 154, 0.3);
+}
+
+.mailbox__notification.stop {
+  background-color: rgba(255, 99, 71, 0.3);
+}
