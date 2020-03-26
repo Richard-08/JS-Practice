@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #1d2b64;
+  background: -webkit-linear-gradient(to right, #f8cdda, #1d2b64);
+  background: linear-gradient(to right, #f8cdda, #1d2b64);
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #f3dde4;
+}
+
+h4 {
+  text-align: center;
+  color: tomato;
+}
+
+p {
+  font-weight: 600;
+  color: hsl(0, 93%, 68%);
+}
+
+input {
+  max-width: 90px;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(52, 7, 202, 0.3);
+}
+
+.form {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.keydown-wrapper,
+.keypress-wrapper,
+.keyup-wrapper {
+  border: 1px solid #efeded;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.modifiers {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #efeded;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: hsl(0, 93%, 68%);
+}
+
+.shiftKeyPress,
+.ctrlKeyPress,
+.altKeyPress,
+.metaKeyPress {
+  font-weight: 200;
+  padding: 2px;
+  border-radius: 10px;
+  background-color: lightsalmon;
+  color: #f1f1f1;
+}
+
+.shiftKeyPress.true,
+.ctrlKeyPress.true,
+.altKeyPress.true,
+.metaKeyPress.true {
+  background-color: mediumspringgreen;
+}
+
+.btn {
+  text-align: center;
+}
+
+.reset-btn {
+  background-color: tomato;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.reset-btn:hover {
+  color: #fff;
+  box-shadow: 0px 0px 0px 3px rgba(255, 99, 71, 0.5);
+}

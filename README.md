@@ -14,4 +14,5 @@
 12) DB App - https://richard-08.github.io/JS-Practice/DB%20App/
 13) Hello App - https://richard-08.github.io/JS-Practice/Hello/
 14) IOT Mailbox Simulator - https://richard-08.github.io/JS-Practice/IOT%20Mailbox%20Simulator/
-15) Particle Effects - https://richard-08.github.io/JS-Practice/Particle%20Effects/
+15) Particle Effects - https://richard-08.github.io/JS-Practice/Particles%20Effect/
+16) Javascript Key Event Test - https://richard-08.github.io/JS-Practice/Key%20Value/

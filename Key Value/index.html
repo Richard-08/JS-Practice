@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Key Value</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Javascript Key Event Test Script</h1>
+
+        <form class="form">
+
+            <div class="modifiers">
+                <div class="shiftKey">ShiftKey: <span class="shiftKeyPress">false</span></div>
+                <div class="ctrlKey">CtrlKey: <span class="ctrlKeyPress">false</span></div>
+                <div class="altKey">AltKey: <span class="altKeyPress">false</span></div>
+                <div class="metaKey">MetaKey: <span class="metaKeyPress">false</span></div>
+            </div>
+
+            <h4>Press a key on the keyboard...</h4>
+
+            <div class="keydown-wrapper">
+                <p>Keydown:</p>
+                <label for="keydown-name">KeyName:</label>
+                <input type="text" name="keydown-name" class="keydown-name" readonly>
+
+                <label for="keydown-code">KeyCode:</label>
+                <input type="text" name="keydown-code" class="keydown-code" readonly>
+
+                <label for="keydown-char">charCode:</label>
+                <input type="text" name="keydown-char" class="keydown-char" readonly>
+            </div>
+
+            <div class="keypress-wrapper">
+                <p>Keypress:</p>
+                <label for="keypress-name">KeyName:</label>
+                <input type="text" name="keypress-name" class="keypress-name" readonly>
+
+                <label for="keypress-code">KeyCode:</label>
+                <input type="text" name="keypress-code" class="keypress-code" readonly>
+
+                <label for="keypress-char">charCode:</label>
+                <input type="text" name="keypress-char" class="keypress-char" readonly>
+            </div>
+
+            <div class="keyup-wrapper">
+                <p>Keyup:</p>
+                <label for="keyup-name">KeyName:</label>
+                <input type="text" name="keyup-name" class="keyup-name" readonly>
+
+                <label for="keyup-code">KeyCode:</label>
+                <input type="text" name="keyup-code" class="keyup-code" readonly>
+
+                <label for="keyup-char">charCode:</label>
+                <input type="text" name="keyup-char" class="keyup-char" readonly>
+            </div>
+
+            <div class="btn">
+                <button class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
