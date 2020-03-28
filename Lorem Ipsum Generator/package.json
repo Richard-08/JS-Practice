@@ -1,0 +1,17 @@
+{
+  "name": "lorem-ipsum-generator",
+  "version": "1.0.0",
+  "description": "lorem-ipsum-generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "richard-08",
+  "license": "MIT",
+  "dependencies": {
+    "lorem-ipsum": "^2.0.3"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

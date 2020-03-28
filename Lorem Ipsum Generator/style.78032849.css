@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: #093028;
+  background: -webkit-linear-gradient(to right, #237a57, #093028);
+  background: linear-gradient(to right, #237a57, #093028);
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.control-form {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.paragraphs {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.generate,
+.copy {
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.generate {
+  margin: 5px 10px;
+  background-color: tomato;
+}
+
+.generate:hover {
+  box-shadow: 0px 0px 0px 4px rgba(255, 99, 71, 0.3);
+  transform: translateY(-3px);
+}
+
+.generate:active {
+  transform: translateY(0);
+}
+
+.copy {
+  background-color: dodgerblue;
+}
+
+.copy:hover {
+  box-shadow: 0px 0px 0px 4px rgba(30, 144, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+.copy:active {
+  transform: translateY(0);
+}
+
+.text-content {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 0px 5px rgba(255, 255, 255, 0.05);
+}
+
+.lorem-ipsum {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
