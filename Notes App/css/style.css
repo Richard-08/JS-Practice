@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background: #a8ff78;
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  color: hsl(210, 49%, 51%);
+  font-family: "Comic Neue", cursive;
+  font-size: 20px;
+}
+
+body.mode {
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+  color: #f1f1f1;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.add-note {
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+
+.add-note:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 0 4px rgba(30, 144, 255, 0.3);
+}
+
+.add-note:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.nightmode {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.nightmode:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+}
+
+.nightmode:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.nightmode.day {
+  color: orange;
+}
+
+.notes {
+}
+
+.note {
+  max-width: 800px;
+  min-height: 100px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.note__control {
+  width: 100%;
+  height: 25px;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  text-align: end;
+}
+
+.done {
+  color: mediumspringgreen;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.delete {
+  color: tomato;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.done:hover,
+.delete:hover {
+  opacity: 0.8;
+}
+
+.date {
+  color: #fff;
+  padding-right: 10px;
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.note__text {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.note__text:hover {
+  box-shadow: 10px 10px 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.note__text:focus {
+  outline: none;
+  box-shadow: 10px 10px 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.note:focus {
+  outline: none;
+}

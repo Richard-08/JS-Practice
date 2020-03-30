@@ -17,3 +17,4 @@
 15) Particle Effects - https://richard-08.github.io/JS-Practice/Particles%20Effect/
 16) Javascript Key Event Test - https://richard-08.github.io/JS-Practice/Key%20Value/
 17) Lorem Ipsum Generator - https://richard-08.github.io/JS-Practice/Lorem%20Ipsum%20Generator/
+18) Notes App - https://richard-08.github.io/JS-Practice/Notes%20App/
