@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"
+        integrity="sha256-TQq84xX6vkwR0Qs1qH5ADkP+MvH0W+9E7TdHJsoIQiM=" crossorigin="anonymous"></script>
+    <title>Pearson Regression Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="form">
+            <label for="x">x:</label>
+            <input type="text" name="x" class="x-data" placeholder="Example: 5,10,15,2,1">
+
+            <label for="y">y:</label>
+            <input type="text" name="y" class="y-data" placeholder="Example: 5,10,15,2,1">
+
+            <button class="calculate-btn">Calculate</button>
+            <button class="reset-btn">Reset</button>
+        </form>
+
+        <table class="data-table">
+
+            <tr class="data-table__head">
+                <th>x-data</th>
+                <th>y-data</th>
+
+                <th>x mean</th>
+                <th>y mean</th>
+
+                <th>x Sd</th>
+                <th>y Sd</th>
+
+                <th>Coefficient</th>
+                <th>Correlation</th>
+            </tr>
+
+            <tbody class="data-table__body">
+
+            </tbody>
+        </table>
+
+        <!-- Canvas -->
+
+        <canvas id="myChart" width="150" height="50vh"></canvas>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
