@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
+/* font-family: 'Josefin Sans', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+/* font-family: 'Pathway Gothic One', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: black;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #dbd639;
+  background-image: url("../img/index.png");
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Do Hyeon", sans-serif;
+  color: #12eed4;
+}
+
+.container {
+  max-width: 100%;
+  width: 840px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 500px;
+}
+
+/* ////////////////// Start Window /////////////// */
+
+.start-window {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 840px;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.start-window h2 {
+  font-size: 60px;
+}
+
+.start-window p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.start-window p span {
+  letter-spacing: 1px;
+  border-bottom: 1px solid #dbd639;
+}
+
+.btn {
+  width: 150px;
+  height: 30px;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(30, 255, 0, 1);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 8px 3px rgba(30, 255, 0, 0.8);
+}
+
+.start-window.start {
+  display: none;
+}
+
+/* //////////////////// End Window //////////////// */
+
+.end-window.end {
+  display: block;
+  background-image: url("../img/bg-end.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 840px;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.end-window.end h2 {
+  font-size: 40px;
+}
+
+.end-window.end h3 {
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+.end-window.end .btn {
+  background-color: rgb(214, 81, 58);
+}
+
+.end-window.end .btn:hover {
+  box-shadow: 0px 0px 8px 3px rgba(214, 81, 58, 0.8);
+}
+
+.end-window {
+  display: none;
+}
+
+/* /////////////////// Card /////////////////// */
+
+.card {
+  text-align: center;
+  transform: rotateX(20deg);
+
+  position: relative;
+  top: 0;
+  transform-origin: 50% 100%;
+}
+
+.card__question {
+  margin-bottom: 20px;
+  /* border-bottom: 1px solid #12eed4; */
+}
+
+.card__answers {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer {
+  background-color: rgba(255, 255, 255, 0.05);
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 10px 0;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.answer.true {
+  box-shadow: 0px 0px 8px 3px rgba(30, 255, 0, 0.8);
+}
+
+.answer.false {
+  box-shadow: 0px 0px 8px 3px rgba(255, 0, 0, 0.8);
+}
+
+.card.next {
+  animation: crawl 8s linear;
+  animation-delay: 2s;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
