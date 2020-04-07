@@ -6,7 +6,7 @@ class Quiz {
 
     constructor(data) {
         this.data = data;
-        this.index = 20;
+        this.index = 0;
         this.score = 0;
     }
 
