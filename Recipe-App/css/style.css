@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+/* font-family: 'Raleway', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to right, #faffd1, #a1ffce);
+  background: linear-gradient(to right, #faffd1, #a1ffce);
+  color: hsl(210, 10%, 33%);
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.meal-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  /* justify-content: space-evenly; */
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.block {
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.recipes-box {
+  min-height: 50vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+}
+
+.meals {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.meal-box {
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.meal-box:last-child {
+  border: none;
+}
+
+.meal-box h3 {
+  font-weight: 400;
+}
+
+.recipe {
+  flex: 4;
+}
+
+.recipe-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-box h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.meal-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.meal-img img {
+  max-width: 40%;
+  margin-right: 20px;
+}
+
+.instruction {
+  line-height: 1.5;
+  margin-top: 20px;
+  color: hsl(243, 87%, 12%);
+}
+
+.meal-img p {
+  white-space: pre;
+  line-height: 1.5;
+  font-weight: 600;
+  color: hsl(243, 87%, 12%);
+}
