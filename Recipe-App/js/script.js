@@ -15,7 +15,7 @@ getCategories();
 
 const toHTML = meal => `
 <div class="block" data-id="${meal.idCategory}">
-    <h2>${meal.strCategory}</h2>
+    ${meal.strCategory}
 </div>`;
 
 function render(categoriesData) {
@@ -48,8 +48,15 @@ function renderMeals(mealsData) {
 
 
 mealBlocks.addEventListener('click', event => {
-    let category = event.target.innerText
+    let category = event.target.innerText;
     getMeals(category);
+
+    let node = event.target.parentNode.children;
+
+    for (let i = 0; i < node.length; i += 1) {
+        node[i].classList.remove('active');
+    }
+    event.target.classList.add('active');
 });
 
 
