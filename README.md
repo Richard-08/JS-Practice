@@ -20,3 +20,4 @@
 18) Notes App - https://richard-08.github.io/JS-Practice/Notes%20App/
 19) Pearson Regression - https://richard-08.github.io/JS-Practice/Pearson%20Regression/
 20) Star Wars Quiz - https://richard-08.github.io/JS-Practice/Star%20Wars%20Quiz
+21) Recipe-App - https://richard-08.github.io/JS-Practice/Recipe-App/
