@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap");
+/* font-family: 'Orbitron', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background: #ff416c;
+  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  font-size: 18px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+input {
+  width: 60%;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgba(255, 65, 108, 0.2);
+  color: #ff4b2b;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 15px;
+}
+
+.form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+small.error {
+  display: block;
+  color: red;
+  font-size: 14px;
+  font-style: italic;
+  padding: 5px;
+}
+
+small {
+  display: none;
+}
+
+.btn {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 30%;
+  padding: 10px;
+  background-color: tomato;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 0px 5px rgba(255, 99, 71, 0.5);
+  font-size: 15px;
+}
