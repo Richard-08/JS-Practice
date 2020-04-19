@@ -26,7 +26,7 @@
 | [Recipe App](https://richard-08.github.io/JS-Practice/Recipe-App/)                                         | Recipe                                                     | 1-Beginner |
 | [Random Meal Generator]                                                                                    | Generate random meals                                      | 1-Beginner |
 | [Roman to Decimal Converter](https://richard-08.github.io/JS-Practice/Roman-to-Decimal-numbers-Converter/) | Convert Roman to Decimal numbers                           | 1-Beginner |
-| [Slider Design]                                                                                            | Display images using a slider control                      | 1-Beginner |
+| [Slider Design](https://richard-08.github.io/JS-Practice/Slider%20Design)                                  | Display images using a slider control                      | 1-Beginner |
 | [Stopwatch App]                                                                                            | Count time spent on activities                             | 1-Beginner |
 | [TrueOrFalse]                                                                                              | Identify the result of a conditional comparison            | 1-Beginner |
 | [Vigenere Cipher]                                                                                          | Encrypt text using the Vigenere Cypher                     | 1-Beginner |
