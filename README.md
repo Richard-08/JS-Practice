@@ -28,7 +28,7 @@
 | [Roman to Decimal Converter](https://richard-08.github.io/JS-Practice/Roman-to-Decimal-numbers-Converter/) | Convert Roman to Decimal numbers                           | 1-Beginner |
 | [Slider Design](https://richard-08.github.io/JS-Practice/Slider%20Design)                                  | Display images using a slider control                      | 1-Beginner |
 | [Stopwatch App]                                                                                            | Count time spent on activities                             | 1-Beginner |
-| [TrueOrFalse]                                                                                              | Identify the result of a conditional comparison            | 1-Beginner |
+| [TrueOrFalse](https://richard-08.github.io/JS-Practice/TrueOrFalse/)                                       | Identify the result of a conditional comparison            | 1-Beginner |
 | [Vigenere Cipher]                                                                                          | Encrypt text using the Vigenere Cypher                     | 1-Beginner |
 | [Wind Chill]                                                                                               | Calculate the windchill factor from an actual temperature  | 1-Beginner |
 | [Word Frequency]                                                                                           | Calculate word frequency in a block of text                | 1-Beginner |

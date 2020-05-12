@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TrueOrFalse</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TrueOrFalse</h1>
+        <p>Something every developer needs to clearly understand is the result of conditional expressions like x === y.
+            This is a bit more involved for Javascript developers who must also understand the concept of truthiness.
+        </p>
+        <p>TrueOrFalse helps by displaying the result when a conditional operator is applied to two values. Users can
+            use this to test their knowledge and explore edge cases.</p>
+
+        <!-- Form -->
+        <form class="form">
+
+            <div class="value">
+                <select class="first-type">
+                    <option value="number">Number</option>
+                    <option value="string">String</option>
+                    <option value="boolean">Boolean</option>
+                    <option value="undefined">Undefined</option>
+                    <option value="null">Null</option>
+                </select>
+                <input type="text" class="first-value">
+            </div>
+
+            <div class="operator">
+                <select class="operator-value">
+                    <option value="equality">==</option>
+                    <option value="inequality">!=</option>
+                    <option value="identity">===</option>
+                    <option value="nonIdentity">!==</option>
+                    <option value="greater">></option>
+                    <option value="greaterOrEqual">>=</option>
+                    <option value="less"><</option>
+                    <option value="lessOrEqual"><=</option>
+                </select>
+
+                <button class="compare-btn">Compare</button>
+            </div>
+
+            <div class="value">
+                <select class="second-type">
+                    <option value="number">Number</option>
+                    <option value="string">String</option>
+                    <option value="boolean">Boolean</option>
+                    <option value="undefined">Undefined</option>
+                    <option value="null">Null</option>
+                </select>
+                <input type="text" class="second-value">
+            </div>
+
+        </form>
+
+        <!-- Result -->
+
+        <div class="compare-result">
+            <h2 class="result">True</h2>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

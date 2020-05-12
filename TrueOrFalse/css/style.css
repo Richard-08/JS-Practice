@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&display=swap");
+/* font-family: 'Catamaran', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Catamaran", sans-serif;
+  outline: none;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+}
+
+.container {
+  max-width: 100%;
+  width: 1120px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+p {
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+select {
+  margin-right: 15px;
+}
+
+.form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+}
+
+.first-type {
+}
+
+.first-value {
+}
+
+.operator {
+  margin: 30px 0;
+}
+
+.second-type {
+}
+
+.second-value {
+}
+
+.compare-btn {
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  background-color: hsl(205, 100%, 56%);
+  transition: all 0.2s ease;
+}
+
+.compare-btn:hover {
+  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.compare-result {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  translate: 50% -50%;
+  width: 200px;
+  height: 100px;
+  background-color: hsla(205, 100%, 56%, 0.9);
+  border-radius: 5px;
+  font-size: 25px;
+  transform: scale(0);
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compare-result.show {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 420px) {
+  .value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .first-type,
+  .second-type {
+    margin-bottom: 15px;
+  }
+}
