@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.vigenere-cipher {
+  .container {
+    max-width: 100%;
+    width: 800px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 3px rgba($color: #000000, $alpha: 0.05);
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+  }
+
+  &__input:focus {
+    background-color: rgba($color: #000000, $alpha: 0.05);
+    box-shadow: none;
+  }
+
+  &__secret-key {
+    @media screen and (max-width: 360px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      font-weight: 600;
+
+      @media screen and (max-width: 450px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 360px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__key {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 3px rgba($color: #000000, $alpha: 0.05);
+  }
+
+  &__key:focus {
+    background-color: rgba($color: #000000, $alpha: 0.05);
+    box-shadow: none;
+  }
+
+  &__btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 360px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__encrypt-btn,
+  &__decrypt-btn {
+    width: 150px;
+    height: 35px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  &__encrypt-btn {
+    background-color: coral;
+
+    @media screen and (max-width: 360px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__decrypt-btn {
+    background-color: royalblue;
+  }
+
+  &__encrypt-btn:hover,
+  &__decrypt-btn:hover {
+    box-shadow: 0px 0px 0px 5px rgba($color: #000000, $alpha: 0.1);
+    color: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  &__encrypt-btn:active,
+  &__decrypt-btn:active {
+    box-shadow: none;
+  }
+
+  &__result-field {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 3px rgba($color: #000000, $alpha: 0.05);
+
+    h2 {
+      padding-bottom: 10px;
+      text-align: center;
+      margin-bottom: 15px;
+      border-bottom: 2px solid rgba($color: #000000, $alpha: 0.05);
+
+      @media screen and (max-width: 450px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__result {
+    word-wrap: break-word;
+  }
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.vigenere-cipher .container {
+  max-width: 100%;
+  width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.vigenere-cipher__title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .vigenere-cipher__title {
+    font-size: 2rem;
+  }
+}
+
+.vigenere-cipher__input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.vigenere-cipher__input:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (max-width: 360px) {
+  .vigenere-cipher__secret-key {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.vigenere-cipher__secret-key label {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 450px) {
+  .vigenere-cipher__secret-key label {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .vigenere-cipher__secret-key label {
+    margin-bottom: 10px;
+  }
+}
+
+.vigenere-cipher__key {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
+}
+
+.vigenere-cipher__key:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.vigenere-cipher__btns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 360px) {
+  .vigenere-cipher__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.vigenere-cipher__encrypt-btn, .vigenere-cipher__decrypt-btn {
+  width: 150px;
+  height: 35px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.vigenere-cipher__encrypt-btn {
+  background-color: coral;
+}
+
+@media screen and (max-width: 360px) {
+  .vigenere-cipher__encrypt-btn {
+    margin-bottom: 10px;
+  }
+}
+
+.vigenere-cipher__decrypt-btn {
+  background-color: royalblue;
+}
+
+.vigenere-cipher__encrypt-btn:hover, .vigenere-cipher__decrypt-btn:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.vigenere-cipher__encrypt-btn:active, .vigenere-cipher__decrypt-btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.vigenere-cipher__result-field {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.05);
+}
+
+.vigenere-cipher__result-field h2 {
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 450px) {
+  .vigenere-cipher__result-field h2 {
+    font-size: 1rem;
+  }
+}
+
+.vigenere-cipher__result {
+  word-wrap: break-word;
+}
+/*# sourceMappingURL=style.css.map */

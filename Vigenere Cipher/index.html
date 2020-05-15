@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vigenere Cipher</title>
+</head>
+
+<body>
+
+    <main class="vigenere-cipher">
+        <div class="container">
+
+            <h1 class="vigenere-cipher__title">Vigenere Cipher</h1>
+
+            <textarea rows="5" class="vigenere-cipher__input" placeholder="Your message..."></textarea>
+            
+            <div class="vigenere-cipher__secret-key">
+                <label for="key">Secret key:</label>
+                <input type="text" name="key" class="vigenere-cipher__key" placeholder="Enter your secret key">
+            </div>
+
+
+            <div class="vigenere-cipher__btns">
+                <button class="vigenere-cipher__encrypt-btn">Encrypt</button>
+                <button class="vigenere-cipher__decrypt-btn">Decrypt</button>
+            </div>
+
+            <div class="vigenere-cipher__result-field">
+                <h2>Resulting <span class="vigenere-cipher__mode"></span> message</h2>
+                <p class="vigenere-cipher__result"></p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
