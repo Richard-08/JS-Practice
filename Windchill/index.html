@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Windchill App</title>
+</head>
+
+<body>
+
+    <main class="windchill">
+
+        <div class="container">
+
+            <h1>Wind Chill Calculator</h1>
+
+            <div class="windchill-form">
+                <div class="windchill__measurement">
+                    <label for="measurement">Metric</label>
+                    <input type="radio" name="measurement" value="metric" class="measure" checked>
+
+                    <label for="measurement">Imperial</label>
+                    <input type="radio" name="measurement" value="imperial" class="measure">
+                </div>
+
+                <div class="windchill__data">
+                    <div class="data-wrapper">
+                        <label for="temperature">Temperature <i class="fas fa-temperature-low"></i>,
+                            <span class="temperature-measure">C°</span></label>
+                        <input type="number" name="temperature" class="temperature" step="0.1" value="20">
+                    </div>
+
+                    <div class="data-wrapper">
+                        <label for="wind">Wind Speed <i class="fas fa-wind"></i>, <span
+                                class="wind-measure">km/h</span></label>
+                        <input type="number" name="wind" class="wind" step="0.1" value="4.8">
+                    </div>
+                </div>
+
+                <div class="windchill-btn">
+                    <button class="windchill__calculate-btn">Calculate</button>
+                </div>
+
+                <!-- --------------------------------------Result Modal---------------------------------- -->
+
+                <div class="result">
+                    <button class="result__close-btn"><i class="fas fa-times"></i></button>
+                    <ul class="result-list">
+                        <li>Temperature <i class="fas fa-temperature-low"></i>- <span class="result__temperature-value">20</span></li>
+                        <li>Wind Speed <i class="fas fa-wind"></i> - <span class="result__wind-value">4.8</span></li>
+                        <li>Wind Chill - <span class="result__windchill-value"></span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

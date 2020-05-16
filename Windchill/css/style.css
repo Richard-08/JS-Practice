@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap");
+/* font-family: 'Dosis', sans-serif; */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+  color: #3f4756;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+}
+
+.windchill {
+  background: #00c9ff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#92fe9d), to(#00c9ff));
+  background: linear-gradient(to top, #92fe9d, #00c9ff);
+  /* -----------------------------Result--------------------------- */
+}
+
+.windchill h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 450px) {
+  .windchill h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.windchill .container {
+  max-width: 100%;
+  width: 600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.windchill .windchill-form {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.windchill .windchill-form > * {
+  margin-bottom: 20px;
+}
+
+.windchill .measure {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.windchill .measure:last-child {
+  margin-right: 0;
+}
+
+.windchill__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.windchill__data .data-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .windchill__data .data-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.windchill__data .data-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.windchill__data label {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .windchill__data label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.windchill__data label i {
+  padding: 0 10px;
+  font-size: 30px;
+}
+
+.windchill__data label span {
+  font-weight: 600;
+}
+
+.windchill .temperature,
+.windchill .wind {
+  max-width: 150px;
+  padding: 10px;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.windchill__calculate-btn {
+  background-color: #92fe9d;
+  width: 250px;
+  height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.windchill__calculate-btn:hover {
+  -webkit-box-shadow: 0px 3px 0px 3px rgba(63, 71, 86, 0.1);
+          box-shadow: 0px 3px 0px 3px rgba(63, 71, 86, 0.1);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  color: #3f4756;
+  opacity: 0.8;
+}
+
+.windchill__calculate-btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.windchill .result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(146, 254, 157, 0.8);
+  padding: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.windchill .result__close-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.windchill .result .result-list {
+  width: 100%;
+  margin: auto;
+  font-size: 45px;
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .windchill .result .result-list {
+    font-size: 20px;
+  }
+}
+
+.windchill .result .result-list span {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.windchill .result .result-list li {
+  padding: 5px 0;
+  border-top: 1px solid #fff;
+}
+
+.windchill .result .result-list li:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.windchill .result.show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=style.css.map */

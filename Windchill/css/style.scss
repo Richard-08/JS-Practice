@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap");
+/* font-family: 'Dosis', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+  color: rgb(63, 71, 86);
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+}
+
+.windchill {
+  background: #00c9ff;
+  background: -webkit-linear-gradient(to top, #92fe9d, #00c9ff);
+  background: linear-gradient(to top, #92fe9d, #00c9ff);
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 450px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .container {
+    max-width: 100%;
+    width: 600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .windchill-form {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 5px rgba($color: #000000, $alpha: 0.05);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .windchill-form > * {
+    margin-bottom: 20px;
+  }
+
+  &__measurement {
+  }
+
+  .measure {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .measure:last-child {
+    margin-right: 0;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+
+    .data-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: 450px) {
+        flex-direction: column;
+      }
+    }
+
+    .data-wrapper:last-child {
+      margin-bottom: 0;
+    }
+
+    label {
+      margin-right: 20px;
+
+      @media screen and (max-width: 450px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      i {
+        padding: 0 10px;
+        font-size: 30px;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .temperature,
+  .wind {
+    max-width: 150px;
+    padding: 10px;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .windchill-btn {
+  }
+
+  &__calculate-btn {
+    background-color: #92fe9d;
+    width: 250px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  &__calculate-btn:hover {
+    box-shadow: 0px 3px 0px 3px rgba(63, 71, 86, 0.1);
+    transform: translateY(-2px);
+    color: rgb(63, 71, 86);
+    opacity: 0.8;
+  }
+
+  &__calculate-btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  /* -----------------------------Result--------------------------- */
+
+  .result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(146, 254, 157, 0.8);
+    padding: 10px;
+    transition: all 0.5s ease;
+    transform: translateY(-100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__close-btn {
+      align-self: flex-end;
+      background-color: transparent;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .result-list {
+      width: 100%;
+      margin: auto;
+      font-size: 45px;
+      text-align: center;
+
+      @media screen and (max-width: 450px) {
+        font-size: 20px;
+      }
+
+      span {
+        font-weight: 600;
+        margin-left: 10px;
+      }
+
+      li {
+        padding: 5px 0;
+        border-top: 1px solid #fff;
+      }
+
+      li:last-child {
+        border-bottom: 1px solid #fff;
+      }
+    }
+
+    &__temperature-value {
+    }
+
+    &__wind-value {
+    }
+
+    &__windchill-value {
+    }
+  }
+
+  .result.show {
+    transform: translateY(0);
+  }
+}
