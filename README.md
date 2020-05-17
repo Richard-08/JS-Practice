@@ -31,7 +31,7 @@
 | [TrueOrFalse](https://richard-08.github.io/JS-Practice/TrueOrFalse/)                                       | Identify the result of a conditional comparison            | 1-Beginner |
 | [Vigenere Cipher](https://richard-08.github.io/JS-Practice/Vigenere%20Cipher/)                             | Encrypt text using the Vigenere Cypher                     | 1-Beginner |
 | [Wind Chill](https://richard-08.github.io/JS-Practice/Windchill/)                                          | Calculate the windchill factor from an actual temperature  | 1-Beginner |
-| [Word Frequency]                                                                                           | Calculate word frequency in a block of text                | 1-Beginner |
+| [Word Frequency](https://richard-08.github.io/JS-Practice/Word%20Frequency/)                               | Calculate word frequency in a block of text                | 1-Beginner |
 | [Weather App]                                                                                              | Get the temperature, weather condition of a city.          | 1-Beginner |
 
 ### Tier-2: Intermediate Projects

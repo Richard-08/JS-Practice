@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Word Frequency App</title>
+</head>
+
+<body>
+
+    <main class="main-content">
+
+        <div class="container">
+
+            <h1>Word Frequency Counter</h1>
+
+            <div class="word-frequency">
+                <textarea cols="10" class="word-frequency__input" placeholder="Enter your text..."></textarea>
+            </div>
+
+            <button class="translate-btn">Translate</button>
+
+            <!-- ---------------------------------Result------------------------------------- -->
+
+            <table class="data-table">
+
+                <tr class="data-table__head">
+                    <th>Word</th>
+                    <th>Frequency</th>
+                </tr>
+
+                <tbody class="data-table__body">
+                    <!-- Result -->
+                </tbody>
+            </table>
+
+
+            <!-- --------------Error meassage-------- -->
+
+            <div class="error">
+                <h4>Please, enter your text!</h4>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
