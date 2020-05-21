@@ -11,7 +11,7 @@ const apiKey = 'X2GnaCgq6krL3icRiYHvJQGiAORk11rY';
 async function getCitiesList(name) {
     let citiesList = [];
 
-    let response = await fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${name}`)
+    let response = await fetch(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${name}`)
         .then(response => response.json())
         .then(data => citiesList.push(...data));
 
@@ -57,7 +57,7 @@ const weatherList = document.querySelector('.weather-box');
 async function getWeatherInfo(cityKey, cityName) {
     let weatherInfo = [];
 
-    let response = await fetch(`http://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apiKey}&details=true`)
+    let response = await fetch(`https://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apiKey}&details=true`)
         .then(response => response.json())
         .then(data => weatherInfo.push(...data));
 
