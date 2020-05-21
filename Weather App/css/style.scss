@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+
+@import "./layout/header.scss";
+@import "./layout/weather-info.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  max-width: 100%;
+  width: 1115px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
