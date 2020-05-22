@@ -81,7 +81,7 @@ const toHTMLWeatherInfo = (weather, cityName) => {
 
         <div class="wind">
             <i class="fas fa-wind"></i>
-            <h2>4</h2>
+            <h2>${weather.Wind.Speed.Metric.Value}</h2>
             <span>km/h</span>
         </div>
 
