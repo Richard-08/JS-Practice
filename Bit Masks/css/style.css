@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap");
+/* font-family: 'Exo', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Exo", sans-serif;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 100%;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 30px;
+  text-align: center;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.submit-btn {
+  background-color: coral;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.checkboxes {
+  padding: 5px;
+}
+
+.checkboxes:nth-child(even) {
+  background-color: rgba(255, 127, 80, 0.5);
+  color: #fff;
+}
+
+.checkbox-label {
+}
+
+@media screen and (max-width: 400px) {
+  .search {
+    flex-direction: column;
+  }
+
+  .search-input {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
