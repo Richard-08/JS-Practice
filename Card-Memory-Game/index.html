@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Card Memory Game</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <div class="container">
+
+            <h1>Card Memory Game</h1>
+
+            <div class="result">
+                <h4>Score: <span class="score">{{score}}</span></h4>
+                <h4>Moves: <span class="moves">{{moves}}</span></h4>
+                <button class="restart" v-on:click="restartGame">Restart</button>
+            </div>
+
+            <div class="cards-box">
+                <div 
+                    class="card" 
+                    v-for='(card, index) in data' 
+                    v-bind:class='{show: card.isShow}'
+                    v-on:click=showCard(index);
+                    >
+                    <img v-bind:src=card.src alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background: #a8ff78;
+  background: -webkit-linear-gradient(to bottom, #78ffd6, #a8ff78);
+  background: linear-gradient(to bottom, #78ffd6, #a8ff78);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 15px 0;
+}
+
+.score,
+.moves {
+  color: #00c2d8;
+}
+
+.restart {
+  background-color: #00c2d8;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cards-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  transition: all 0.5s ease;
+  perspective: 1000;
+  animation: appearance 1s linear;
+
+  @keyframes appearance {
+    0% {
+      transform: scale(0) rotate(360deg);
+    }
+
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+
+  img {
+    transform: scale(0);
+    transition: all 0.5s ease 0.1s;
+  }
+}
+
+.card.show {
+  transform: rotateY(0);
+  
+  img {
+    transform: scale(1);
+  }
+}
+

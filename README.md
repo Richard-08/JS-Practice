@@ -41,7 +41,7 @@
 | [Bit Masks](https://richard-08.github.io/JS-Practice/Bit%20Masks/)                          | Using Bit Masks for Conditions                     | 2-Intermediate |
 | [Book Finder App](https://richard-08.github.io/JS-Practice/book-finder-app/dist/index.html) | Search for books by multiple criteria              | 2-Intermediate |
 | [Calculator CLI](https://github.com/Richard-08/JS-Practice/tree/master/Calculator%20CLI)    | Create a basic calculator cli.                     | 2-Intermediate |
-| [Card Memory Game]                                                                          | Memorize and match hidden images                   | 2-Intermediate |
+| [Card Memory Game](https://richard-08.github.io/JS-Practice/Card-Memory-Game)               | Memorize and match hidden images                   | 2-Intermediate |
 | [Charity Finder App]                                                                        | Find a Global Charity to donate to                 | 2-Intermediate |
 | [Chrome Theme Extension]                                                                    | Build your own chrome theme extention.             | 2-Intermediate |
 | [Drawing App]                                                                               | Create digital artwork on the web                  | 2-Intermediate |
