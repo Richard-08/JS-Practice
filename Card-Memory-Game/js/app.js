@@ -5,14 +5,14 @@ new Vue({
     data() {
         return {
             cards: [
-                { id: 0, src: '../img/car.svg' },
-                { id: 1, src: '../img/code.svg' },
-                { id: 2, src: '../img/cubes.svg' },
-                { id: 3, src: '../img/jet.svg' },
-                { id: 4, src: '../img/paper-plane.svg' },
-                { id: 5, src: '../img/rocket.svg' },
-                { id: 6, src: '../img/space-shuttle.svg' },
-                { id: 7, src: '../img/user-secret.svg' }
+                { id: 0, src: 'img/car.svg' },
+                { id: 1, src: 'img/code.svg' },
+                { id: 2, src: 'img/cubes.svg' },
+                { id: 3, src: 'img/jet.svg' },
+                { id: 4, src: 'img/paper-plane.svg' },
+                { id: 5, src: 'img/rocket.svg' },
+                { id: 6, src: 'img/space-shuttle.svg' },
+                { id: 7, src: 'img/user-secret.svg' }
             ],
             data: [],
             moves: 0,
