@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.wrapper {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tools {
+  background-color: rgba(21, 255, 0, 0.5);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tools > div {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  margin: 0 15px 0 5px;
+  cursor: pointer;
+}
+
+button {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.rectangle {
+  padding: 5px;
+  background-color: transparent;
+}
+
+.rectangle-icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+}
+
+.upload-img {
+  background-color: transparent;
+  width: 35px;
+}
+
+.clear {
+  background-color: coral;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+}
+
+.clear:hover {
+  background-color: hsl(16, 100%, 75%);
+}
+
+.upload-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+
+.upload-img:hover img {
+  transform: scale(1.1);
+}

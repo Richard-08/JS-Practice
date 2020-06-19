@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Drawing App</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="tools">
+      <div>
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" value="#ffc600" />
+
+        <label for="line">Line Weight:</label>
+        <input type="range" id="line" name="line" min="1" max="500" value="1" />
+      </div>
+
+      <div>
+        <button class="clear">Clear</button>
+        <button class="upload-img">
+          <img src="img/icon-upload.svg" alt="upload">
+        </button>
+      </div>
+
+    </div>
+    <canvas id="draw"></canvas>
+
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
