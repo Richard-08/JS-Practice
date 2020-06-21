@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Emoji Translator</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="container">
+
+            <h1>Emoji Translator</h1>
+
+            <form class="form">
+                <input v-model="title" type="text" class="form__input" placeholder="Enter your text...">
+                <button class="form__submit-btn btn" @click.prevent="translateToEmoji">Translate</button>
+                <button class="form__clear-btn btn" v-on:click.prevent='clearAll'>Clear</button>
+            </form>
+
+            <div class="emojis">
+                <Result v-for="(item, index) in list" v-bind:item='item' v-bind:key='index' />
+            </div>
+        </div>
+
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

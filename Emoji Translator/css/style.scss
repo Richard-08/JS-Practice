@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+/* font-family: 'Quicksand', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background: #ff9966;
+  background: -webkit-linear-gradient(to left, #ff5e62, #ff9966);
+  background: linear-gradient(to left, #ff5e62, #ff9966);
+}
+
+.container {
+  max-width: 100%;
+  width: 700px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 5px 5px 0px 2px rgba(223, 230, 233, 0.5);
+
+  &__input {
+    background-color: #ecf0f1;
+    border: 2px solid #ecf0f1;
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+  }
+
+  &__input:focus {
+    border: 2px solid #636e72;
+  }
+
+  .btn {
+    width: 50%;
+    padding: 8px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  &__submit-btn {
+    background-color: rgba(85, 239, 196, 1);
+    border: 2px solid rgba(85, 239, 196, 1);
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__submit-btn:hover {
+    background-color: transparent;
+    color: rgba(85, 239, 196, 1);
+  }
+
+  &__clear-btn {
+    background-color: #636e72;
+    border: 2px solid #636e72;
+  }
+
+  &__clear-btn:hover {
+    background-color: transparent;
+    color: #636e72;
+  }
+}
+
+.emojis {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 5px 5px 0px 2px rgba(223, 230, 233, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  color: #ff5e62;
+  font-size: 16px;
+  text-align: center;
+}
+
+.emoji {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+
+  &__character {
+    padding: 5px;
+    font-size: 2rem;
+    margin-right: 30px;
+    color: #f39c12;
+  }
+
+  &__name {
+    background-color: rgba(99, 110, 114, 0.3);
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
